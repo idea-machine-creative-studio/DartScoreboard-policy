@@ -4,23 +4,119 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Privacy Policy – [APP NAME]</title>
+  <meta name="description" content="Privacy Policy for [APP NAME] by [DEVELOPER NAME]." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; line-height: 1.55; margin: 0; }
+    header, main, footer { max-width: 900px; margin: 0 auto; padding: 24px; }
+    header { padding-bottom: 0; }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    .meta { color: #444; margin: 0 0 16px; }
+    h2 { margin-top: 28px; font-size: 18px; }
+    ul { padding-left: 18px; }
+    code { background: #f3f3f3; padding: 2px 6px; border-radius: 6px; }
+    .box { background: #f7f7f7; border: 1px solid #e6e6e6; padding: 14px 16px; border-radius: 12px; }
+    footer { color: #555; font-size: 14px; padding-top: 0; }
+  </style>
 </head>
 <body>
-  <h1>Privacy Policy</h1>
-  <p><strong>App:</strong> [APP NAME]</p>
-  <p><strong>Developer:</strong> [DEVELOPER NAME / COMPANY]</p>
-  <p><strong>Contact:</strong> [CONTACT EMAIL]</p>
+  <header>
+    <h1>Privacy Policy</h1>
+    <p class="meta">
+      <strong>App:</strong> [APP NAME]<br />
+      <strong>Developer:</strong> [DEVELOPER NAME / COMPANY]<br />
+      <strong>Contact:</strong> <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a><br />
+      <strong>Effective date:</strong> [YYYY-MM-DD]
+    </p>
+    <div class="box">
+      This Privacy Policy explains how <strong>[APP NAME]</strong> (“the App”) handles information when you use it.
+    </div>
+  </header>
 
-  <h2>Information Collection</h2>
-  <p>The app does not collect, store, or transmit personal data.</p>
+  <main>
+    <h2>1) Information we collect</h2>
+    <p>
+      The App <strong>does not collect</strong>, store, or transmit personal data.
+    </p>
+    <p>Specifically, the App does not collect:</p>
+    <ul>
+      <li>Name, email address, phone number</li>
+      <li>Precise location (GPS)</li>
+      <li>Contacts</li>
+      <li>Photos, media files, or file contents</li>
+      <li>Payment information</li>
+      <li>Device identifiers for tracking purposes</li>
+    </ul>
 
-  <h2>Local Data</h2>
-  <p>Non-personal data may be stored locally on the device only.</p>
+    <h2>2) Data stored locally on your device</h2>
+    <p>
+      The App may store non-personal app data <strong>locally on your device</strong>, such as settings or app state
+      (for example: game scores, preferences, or configuration). This data stays on your device and is not accessible
+      to the developer or any third party.
+    </p>
 
-  <h2>Third Parties</h2>
-  <p>The app does not use third-party services that collect user data.</p>
+    <h2>3) Third-party services</h2>
+    <p>
+      The App does not use third-party services that collect user data.
+    </p>
 
-  <h2>Contact</h2>
-  <p>Email: [CONTACT EMAIL]</p>
+    <h2>4) Permissions</h2>
+    <p>
+      The App does not require sensitive permissions (such as location, contacts, or media access). If permissions are
+      requested in a future version, this policy will be updated accordingly.
+    </p>
+
+    <h2>5) Children’s privacy</h2>
+    <p>
+      The App does not knowingly collect personal information from children. Because the App does not collect personal
+      data, no child-specific personal data processing occurs.
+    </p>
+
+    <h2>6) Security</h2>
+    <p>
+      Since the App does not collect or transmit personal data, risks related to server-side storage of personal data are minimized.
+      Local data can be removed by uninstalling the App.
+    </p>
+
+    <h2>7) Your choices and data deletion</h2>
+    <p>
+      You can delete locally stored app data by uninstalling the App or clearing the App’s storage in your device settings.
+    </p>
+
+    <h2>8) Changes to this Privacy Policy</h2>
+    <p>
+      We may update this Privacy Policy from time to time. Any updates will be posted on this page with a new effective date.
+    </p>
+
+    <h2>9) Contact</h2>
+    <p>
+      If you have questions about this Privacy Policy, contact:<br />
+      <strong>[DEVELOPER NAME / COMPANY]</strong><br />
+      Email: <a href="mailto:[CONTACT EMAIL]">[CONTACT EMAIL]</a>
+    </p>
+
+    <hr />
+
+    <h2>Optional section (ONLY if you use Ads/Analytics)</h2>
+    <div class="box">
+      <p><strong>Remove this entire section if you do not use ads or analytics.</strong></p>
+      <p>
+        The App may use third-party services such as Google AdMob or Google Analytics for Firebase.
+        These services may collect certain information (such as device information and approximate location) as described
+        in their own privacy policies. Data collection and processing by these services is controlled by the third party.
+      </p>
+      <p>
+        You can learn more in Google’s policies:
+        <code>https://policies.google.com/privacy</code>
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    © <span id="y"></span> [DEVELOPER NAME / COMPANY]. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
